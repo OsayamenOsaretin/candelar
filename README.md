@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/bb/cozzbie/gcalsync.svg?style=svg)](https://circleci.com/bb/cozzbie/gcalsync)

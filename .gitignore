@@ -1,0 +1,5 @@
+/node_modules/
+.env
+.c9
+.DS_Store
+npm-*
