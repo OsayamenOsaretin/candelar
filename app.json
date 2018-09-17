@@ -1,0 +1,50 @@
+{
+  "name": "candelar",
+  "scripts": {
+  },
+  "env": {
+    "BASE_URI": {
+      "required": true
+    },
+    "CLIENT_ID": {
+      "required": true
+    },
+    "CLIENT_SECRET": {
+      "required": true
+    },
+    "DATABASE_URI": {
+      "required": true
+    },
+    "EVENT_NAME": {
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "required": true
+    },
+    "SLACK_TOKEN": {
+      "required": true
+    },
+    "STATE": {
+      "required": true
+    },
+    "TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
