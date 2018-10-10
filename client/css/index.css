@@ -4,7 +4,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  
+  background: #F6F6F6 !important;
 }
 
 .full-body {
@@ -17,8 +17,26 @@ body, html {
   background: #F6F6F6 !important;
 }
 
+.feedback-message {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.status-code {
+  font-size: 400%;
+  margin-bottom: 20px;
+  transform: rotate(90deg);
+}
+
+.status-message {
+  padding: 5%;
+  font-size: 110%;
+}
+  
 .right {
-  width: 50vw;
+  width: 100vw;
+  padding: 5%;
 }
 
 .left {
@@ -41,8 +59,7 @@ body, html {
 
 .header-text {
   font-family: 'Open Sans Condensed' !important;
-  font-size: 45px !important;
-  color: #54254F !important;
+  font-size: 30px !important;
 }
 
 .main-body {
@@ -54,8 +71,7 @@ body, html {
 }
 
 .intro-text {
-  color: #54254F !important;
-  font-size: 32px !important;
+  font-size: 24px !important;
   font-family: 'Open Sans Condensed' !important;
 }
 
@@ -78,12 +94,11 @@ body, html {
 
 .act-btn {
   height: 50px;
-  width: 50%;
+  width: 30%;
   font-size: 20px !important;
   font-family: 'Open Sans Condensed' !important;
   color: white !important;
-  background: #54254F !important;
-  border-radius: 50px !important;
+  background: black !important;
 }
 
 
@@ -93,8 +108,15 @@ body, html {
   margin-top: -1.0em !important;
 }
 
-.sync-button {
+.sync-button.desktop {
   margin-top: 75px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sync-button.mobile {
+  display: none;
 }
 
 .left-body {
@@ -124,17 +146,23 @@ footer {
   text-align: center;
   width: 100%;
   font-size: 1.1em;
+  padding: 10%;
 }
 
 .inline-image {
   display: inline-block;
   width: 1em;
+  margin: -2px;
 }
 
 .inline-button-image {
   display: inline-block;
   width: 1.2em;
   margin-top: .35em;
+}
+
+.ui.list.instruction-list {
+  font-size: 90%;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -174,20 +202,32 @@ footer {
     margin-bottom: 10px;
   }
   .act-btn {
-    height: 50px;
+    height: 30px;
     width: 80%;
     font-size: 15px !important;
     color: white !important;
-    background: #54254F !important;
-    border-radius: 50px !important;
+    background: black !important;
+    padding: 0.785714em 1.5em 1.785714em !important;
   }
+  
+  .sync-button.mobile {
+    display: block;
+    margin-top: 65px;
+  }
+  
+  .sync-button.desktop {
+    display: none;
+  }
+  
+  .ui.list.instruction-list {
+    font-size: 80%;
+  }
+  
   .btn-label {
     height: 10px;
     width: 10px;
     /* margin-top: -0.8em !important; */
   }
-  .sync-button {
-    margin-top: 65px;
-  }
+
 
 }

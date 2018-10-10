@@ -18,10 +18,7 @@
   </head>
   <body>
     <div class="full-body">
-      <div class="left mobile">
-        <div class="left-body">
-        </div>
-      </div>
+      
       <div class="right custom-body">
         <div class="ui sticky stickyTop top-bar">
           <h1 class="ui header header-text">Candelar</h1>
@@ -31,7 +28,7 @@
             Receive calendar invites using reactions.
           </h1>
           <br/>
-          <div class="ui list">
+          <div class="ui list instruction-list">
             <div class="ft item">
               1. Add Candelar to <img class="inline-image" alt="slack" src="img/slack.svg">.
             </div>
@@ -39,16 +36,14 @@
               2. Add the <img class="inline-image" alt="candelar" src="img/candelar.png"> reaction to your <img class="inline-image" alt="slack" src="img/slack.svg"> room and name it <span class="pink">candelar</span>.
             </div>
             <div class="ft item">
-              3. Create a calendar event and have interested parties react to it.
+              3. Create a calendar event with <span class="pink">/candelar</span>.
+            </div>
+            <div class="ft item">
+              4. React with <img class="inline-image" alt="candelar" src="img/candelar.png">  to get invited.
             </div>
           </div>
-          <div class="img_description">
-            <img class="desc" alt="slack" src="img/slack.svg">
-            <img class="desc_arrow" alt="to" src="img/arrow.png">
-            <img class="desc" alt="candelar" src="img/candelar.png">
-          </div>
-          <div class="sync-button">
-            <a href="slack/authorise"
+          <div class="sync-button desktop">
+            <a href="https://slack.com/oauth/authorize?client_id=300424140000.390348218740&scope=chat:write:bot,chat:write:user,bot,reactions:read,users:read,users:read.email,users.profile:read,commands&state=4c563121-bb65-4863-8fa2-e3de1e8f3516"
                 target="_blank"
                 class="act-btn ui animated button">
               <div class="visible content">
@@ -58,6 +53,15 @@
                 <i class="icon">
                   <img class="inline-button-image" alt="" src="img/slack.svg">
                 </i>
+              </div>
+            </a>
+          </div>
+          <div class="sync-button mobile">
+            <a href="slack/authorise"
+                target="_blank"
+                class="act-btn ui button">
+              <div class="visible content">
+                Add to Slack 
               </div>
             </a>
           </div>
